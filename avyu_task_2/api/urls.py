@@ -1,29 +1,29 @@
 from django.urls import include, path
-# from rest_framework import routers
+from rest_framework import routers
 
 from . import views
 
-# router_v1 = routers.DefaultRouter()
-# 
-# 
-# router_v1.register(
-#     r'tags',
-#     views.TagViewSet,
-#     basename='tags',
-# )
-# 
+router_v1 = routers.DefaultRouter()
+
+
+router_v1.register(
+    r'cards',
+    views.CardViewSet,
+    basename='cards',
+)
+#
 # router_v1.register(
 #     r'ingredients',
 #     views.IngredientViewSet,
 #     basename='ingredients',
 # )
-# 
+#
 # router_v1.register(
 #     r'recipes',
 #     views.RecipeViewSet,
 #     basename='recipes',
 # )
-# 
+#
 # router_v1.register(
 #     r'users',
 #     views.CustomUserViewSet,
